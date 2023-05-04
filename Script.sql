@@ -31,13 +31,13 @@ select name from students
 where created_on = '2021-03-26 00:00:00';
  --10. Вывести пользователей где в имени есть слово Анна 
 select name from students
-where name like 'Anna%';
+where name like '%Anna%';
  --11. Вывести пользователей где в имени в конце есть 8
 select name from students
 where name like '%8';
  --12. Вывести пользователей где в имени в есть буква а 
 select name from students
-where name like '%a';
+where name like '%a%';
  --13. Вывести пользователей которые были созданы 2021-07-12 00:00:00
 select name from students
 where created_on = '2021-07-12 00:00:00';
@@ -46,7 +46,7 @@ select name from students
 where created_on = '2021-07-12 00:00:00' and password = '1m313';
  --15. Вывести пользователей которые были созданы 2021-07-12 00:00:00 и у которых в имени есть слово Andrey
 select name from students
-where created_on = '2021-07-12 00:00:00' and name like 'Andrey%';
+where created_on = '2021-07-12 00:00:00' and name like '%Andrey%';
  --16. Вывести пользователей которые были созданы 2021-07-12 00:00:00 и у которых в имени есть цифра 8 
 select name from students
 where created_on ='2021-07-12 00:00:00' and name like '%8%';
